@@ -299,6 +299,9 @@ class ResumeGeneratorApp(QMainWindow):
         return f"""
         你是一位专业的留学申请文书写作专家，请根据以下信息为申请人{data['name']}撰写一份留学申请文书：要求返回latex格式
         的代码，能够正常使用latex编译，注意，输出的文件内容应该符合留学申请文书个人陈述的要求，内容应该均为英文。
+        文书中不应该出现中文内容，非常重要。
+        
+        文书格式应该符合院校的要求，美观。
 
         ## 申请目标
         {data['target']}
@@ -323,7 +326,7 @@ class ResumeGeneratorApp(QMainWindow):
         2. 结合申请目标说明申请动机
         3. 展现个人特质和独特优势
         4. 结构清晰，语言专业流畅
-        5. 长度在800-1000字左右
+        5. 长度应该遵循申请院校的文书要求，请搜索你的知识库来确定，如果没法准确判断，则输出1000词左右。
         """
 
     def build_job_application_prompt(self, data):
