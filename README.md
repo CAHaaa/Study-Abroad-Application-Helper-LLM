@@ -32,3 +32,35 @@
 3. 本项目为作者作业练习项目，不涉及盈利。
 
 
+
+
+
+---
+
+**Study-Abroad-Application-Helper-LLM**  
+A study-abroad document assistant built with PyQt and DeepSeek API. Users can generate personalized application documents by following guided prompts to input their actual details.  
+
+*Current version is an early basic release (currently unmaintained). Generated documents require careful review and editing.*  
+
+### Running  
+Requires Python 3.9.  
+Run:  
+`pip install -r requirements.txt`  
+to install dependencies.  
+
+Before use, register at the [DeepSeek API Platform](https://platform.deepseek.com/usage) to obtain your API key, then enter it in the designated area of the application.  
+
+Generated files are saved in `./output/`.  
+
+To locally compile .tex files:  
+Install [MiKTeX](https://miktex.org/download) and configure environment variables.  
+
+**Recommended workflow:**  
+Upload generated .tex files and photos to [Overleaf](https://www.overleaf.com/) for online compilation and editing.  
+
+### Important Notes  
+1.  Personal information entered will be transmitted to DeepSeek's servers for processing. **Do not input sensitive data.**  
+2.  Content is AI-generated based on user inputs and **does not reflect the author's views**. Verify all information before using in job/study applications.  
+3.  This is a **non-profit academic exercise project**.  
+
+---
